@@ -1,0 +1,15 @@
+{
+  "name": "NMock",
+  "version": "0.1.0",
+  "description": "A tool for defining mock data and building the virtual interface for the front-end",
+  "author": "Samson Shi <lovely_dreamer@126.com>",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "devDependencies": {
+    "iconv-lite": "~0.4.4",
+	"handlebars": "~2.0.0"
+  },
+  "main":  "./lib/mock.js",
+  "bin": { "NMock": "bin/mock" }
+}

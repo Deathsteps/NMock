@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <title>接口文档</title>
+  <style type="text/css">
+	body { font-family: Consolas,"Microsoft YaHei"; }
+	h3 {}
+	p, .p { padding: 10px 15px; color: #333; background: #dde0f0; border-left: 6px solid #88F;}
+	strong { display: inline-block; width: 150px; font-size: 18px;}
+	ul { padding: 0; margin: 0; }
+	li { padding: 0; margin: 5px auto; list-style: none;}
+	dt { font-weight: bold; font-size: 18px; }
+	dd { margin: 8px auto;}
+  </style>
+  <link rel="stylesheet" href="styles/tomorrow.css">
+</head>
+<body>
+	
+<div>
+	<h3>接口名称</h3>
+	<p>GetHotelCommentInfo</p>
+	<h3>接口描述</h3>
+	<p>查询酒店下面所有的房型数据</p>
+</div>
+
+<div>
+	<h3>请求地址</h3>
+	<p>http://vacations.ctrip.com/DIY/Ajax/AjaxGetHotelCommentInfo.aspx</p>
+	<h3>请求方式</h3>
+	<p>GET</p>
+	<h3>请求参数</h3>
+	<div class="p">
+		<ul>
+			<li>
+				<strong>hotel</strong>
+				酒店ID
+			</li>
+			<li>
+				<strong>MasterHotelId</strong>
+				母酒店ID
+			</li>
+		</ul>
+	</div>
+	<h3>请求Mock数据</h3>
+	<div class="p">
+		<dl>
+			<dt>normal</dt>
+			<dd>375292,375292</dd>
+			<dt>noMasterId</dt>
+			<dd>374783,</dd>
+		</dl>
+	</div>
+</div>
+
+<div>
+	<h3>响应内容</h3>
+	<div class="p">
+		<dl>
+			<dt>normal</dt>
+			<dd><pre><code class="language-json">{
+    &quot;success&quot;: true,
+    &quot;data&quot;: {
+        &quot;data&quot;: [
+            {
+                &quot;UserCode&quot;: &quot;100720****&quot;,
+                &quot;CommentContent&quot;: &quot;多次入住了，非常好，值得推荐，尤其是免费接机服务！赞一个！&quot;
+            },
+            {
+                &quot;UserCode&quot;: &quot;1396871****&quot;,
+                &quot;CommentContent&quot;: &quot;有厨房，好方便&quot;
+            },
+            {
+                &quot;UserCode&quot;: &quot;300511****&quot;,
+                &quot;CommentContent&quot;: &quot;很不错&quot;
+            },
+            {
+                &quot;UserCode&quot;: &quot;_CFT010000000541****&quot;,
+                &quot;CommentContent&quot;: &quot;这个酒店非常豪华 不愧是华仔住过的 马桶都是带电控制的 早餐非常nice 酒店里连那个帮助穿鞋的 擦鞋机都有 衣柜里还有雨伞 两个电视机 下面还有冰箱 水果 总之感觉非常棒 唯一一点就是 贵。。。相比鼓浪屿 曾厝垵的酒店稍微有点远&quot;
+            },
+            {
+                &quot;UserCode&quot;: &quot;166415****&quot;,
+                &quot;CommentContent&quot;: &quot;五星级酒店，服务很周到，设施很完善，为住客提供了力所能及的方便。&quot;
+            },
+            {
+                &quot;UserCode&quot;: &quot;_spb404739007363****&quot;,
+                &quot;CommentContent&quot;: &quot;不错的酒店，市中心，去哪儿都方便&quot;
+            }
+        ]
+    },
+    &quot;info&quot;: &quot;获取成功&quot;
+}</code></pre></dd>
+			<dt>noMasterId</dt>
+			<dd><pre><code class="language-json">{
+    &quot;success&quot;: true,
+    &quot;data&quot;: {
+        &quot;data&quot;: [
+            {
+                &quot;UserCode&quot;: &quot;107930****&quot;,
+                &quot;CommentContent&quot;: &quot;so good&quot;
+            },
+            {
+                &quot;UserCode&quot;: &quot;320290****&quot;,
+                &quot;CommentContent&quot;: &quot;很好&quot;
+            },
+            {
+                &quot;UserCode&quot;: &quot;M9662****&quot;,
+                &quot;CommentContent&quot;: &quot;还行&quot;
+            },
+            {
+                &quot;UserCode&quot;: &quot;_cs28000664****&quot;,
+                &quot;CommentContent&quot;: &quot;还可以&quot;
+            },
+            {
+                &quot;UserCode&quot;: &quot;_cs28000664****&quot;,
+                &quot;CommentContent&quot;: &quot;还可以&quot;
+            },
+            {
+                &quot;UserCode&quot;: &quot;_cs28000664****&quot;,
+                &quot;CommentContent&quot;: &quot;还可以&quot;
+            }
+        ]
+    },
+    &quot;info&quot;: &quot;获取成功&quot;
+}</code></pre></dd>
+			<dt>none</dt>
+			<dd><pre><code class="language-json">{
+    &quot;success&quot;: false,
+    &quot;data&quot;: null,
+    &quot;info&quot;: &quot;未查到房型数据&quot;
+}</code></pre></dd>
+			<dt>error</dt>
+			<dd><pre><code class="language-json">{
+    &quot;success&quot;: false,
+    &quot;data&quot;: null,
+    &quot;info&quot;: &quot;查询失败&quot;
+}</code></pre></dd>
+		</dl>
+	</div>
+</div>
+
+<script type="text/javascript" src="scripts/highlight.pack.js"></script>
+<script type="text/javascript">
+hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>

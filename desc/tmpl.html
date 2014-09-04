@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <title>接口文档</title>
+  <style type="text/css">
+	body { font-family: Consolas,"Microsoft YaHei"; }
+	h3 {}
+	p, .p { padding: 10px 15px; color: #333; background: #dde0f0; border-left: 6px solid #88F;}
+	strong { display: inline-block; width: 150px; font-size: 18px;}
+	ul { padding: 0; margin: 0; }
+	li { padding: 0; margin: 5px auto; list-style: none;}
+	dt { font-weight: bold; font-size: 18px; }
+	dd { margin: 8px auto;}
+  </style>
+  <link rel="stylesheet" href="styles/tomorrow.css">
+</head>
+<body>
+	
+<div>
+	<h3>接口名称</h3>
+	<p>{{name}}</p>
+	<h3>接口描述</h3>
+	<p>{{description}}</p>
+</div>
+
+<div>
+	<h3>请求地址</h3>
+	<p>{{url}}</p>
+	<h3>请求方式</h3>
+	<p>{{type}}</p>
+	<h3>请求参数</h3>
+	<div class="p">
+		<ul>
+			{{#each request.data}}
+			<li>
+				<strong>{{@key}}</strong>
+				{{this}}
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+	<h3>请求Mock数据</h3>
+	<div class="p">
+		<dl>
+			{{#each request.mock}}
+			<dt>{{@key}}</dt>
+			<dd>{{this}}</dd>
+			{{/each}}
+		</dl>
+	</div>
+</div>
+
+<div>
+	<h3>响应内容</h3>
+	<div class="p">
+		<dl>
+			{{#each response}}
+			<dt>{{@key}}</dt>
+			<dd><pre><code class="language-json">{{this}}</code></pre></dd>
+			{{/each}}
+		</dl>
+	</div>
+</div>
+
+<script type="text/javascript" src="scripts/highlight.pack.js"></script>
+<script type="text/javascript">
+hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
