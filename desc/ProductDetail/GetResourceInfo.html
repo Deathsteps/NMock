@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <title>GetResourceInfo接口文档</title>
+  <style type="text/css">
+	body { font-family: Consolas,"Microsoft YaHei"; }
+	h3 {}
+	p, .p { padding: 10px 15px; color: #333; background: #dde0f0; border-left: 6px solid #88F;}
+	strong { display: inline-block; width: 180px; font-size: 18px;}
+	ul { padding: 0; margin: 0; }
+	li { padding: 0; margin: 5px auto; list-style: none;}
+	dt { font-weight: bold; font-size: 18px; }
+	dd { margin: 8px auto;}
+  </style>
+  <link rel="stylesheet" href="../styles/tomorrow.css">
+</head>
+<body>
+	
+<div>
+	<h3>接口名称</h3>
+	<p>GetResourceInfo</p>
+	<h3>接口描述</h3>
+	<p>查询默认资源数据</p>
+</div>
+
+<div>
+	<h3>请求地址</h3>
+	<p>http://taocan.ctrip.com/DIY/Ajax/ProductDetail/GetResourceInfo.aspx</p>
+	<h3>请求方式</h3>
+	<p>GET</p>
+	<h3>请求参数</h3>
+	<div class="p">
+		<ul>
+			<li>
+				<strong>UseDate</strong>
+				使用日期
+			</li>
+			<li>
+				<strong>HotelNights</strong>
+				酒店晚数
+			</li>
+			<li>
+				<strong>PackageSearchParams</strong>
+				套餐搜索参数
+			</li>
+		</ul>
+	</div>
+	<h3>请求Mock数据</h3>
+	<div class="p">
+		<dl>
+			<dt>normal</dt>
+			<dd>2014-09-25,1,</dd>
+		</dl>
+	</div>
+</div>
+
+<div>
+	<h3>响应内容</h3>
+	<div class="p">
+		<dl>
+			<dt>normal</dt>
+			<dd><pre><code class="language-json">{
+    &quot;success&quot;: true,
+    &quot;data&quot;: {
+        &quot;HotelInfos&quot;: [
+            {
+                &quot;CheckInDate&quot;: &quot;0001-01-01 00:00:00&quot;,
+                &quot;CheckOutDate&quot;: &quot;0001-01-01 00:00:00&quot;,
+                &quot;HotelCount&quot;: 0,
+                &quot;HotelBaseInfo&quot;: {
+                    &quot;MasterHotelId&quot;: 373052,
+                    &quot;Hotel&quot;: 373052,
+                    &quot;HotelName&quot;: &quot;上海浦东香格里拉大酒店&quot;,
+                    &quot;City&quot;: 2,
+                    &quot;GLON&quot;: 121.499575,
+                    &quot;GLAT&quot;: 31.23484718,
+                    &quot;MidLogoUrl&quot;: &quot;http://images4.c-ctrip.com/target/hotel/7000/6168/d13ecaf40a61488e8de794b9bb9358fe_300_225.jpg&quot;,
+                    &quot;Distance&quot;: &quot;0.54&quot;,
+                    &quot;ScoreLink&quot;: &quot;http://hotels.ctrip.com/hotel/dianping/373052.html&quot;,
+                    &quot;Score&quot;: 4.8,
+                    &quot;NoVoters&quot;: 1620,
+                    &quot;Star&quot;: 5,
+                    &quot;StarDesc&quot;: &quot;国家旅游局评定为五星级（携程用户评定为6钻）&quot;,
+                    &quot;Address&quot;: &quot;浦东新区富城路33号（ 浦东陆家嘴金融贸易区四川北路商业区，近陆家嘴滨江大道 ）&quot;,
+                    &quot;IsStarLicence&quot;: true,
+                    &quot;CustomerEval&quot;: 6,
+                    &quot;SubRoomCount&quot;: 15,
+                    &quot;CanBookRoomNum&quot;: 15
+                },
+                &quot;RoomViews&quot;: [
+                    {
+                        &quot;Hotel&quot;: 373052,
+                        &quot;MasterBasicRoomID&quot;: 514528,
+                        &quot;BaseRoomId&quot;: 12830,
+                        &quot;BaseRoomName&quot;: &quot;豪华浦江房(浦江楼)&quot;,
+                        &quot;SubRoomViews&quot;: [
+                            {
+                                &quot;Room&quot;: 705438,
+                                &quot;SubRoomName&quot;: &quot;(双人入住)&quot;,
+                                &quot;BedType&quot;: &quot;大/双&quot;,
+                                &quot;BreakfastChinese&quot;: &quot;无早&quot;,
+                                &quot;Broadnet&quot;: &quot;免费&quot;,
+                                &quot;Price&quot;: 161,
+                                &quot;BaseSavePrice&quot;: 40,
+                                &quot;OrgPrice&quot;: 201,
+                                &quot;IsGift&quot;: false,
+                                &quot;AreaRange&quot;: &quot;建筑面积：40-42平方米&quot;,
+                                &quot;FloorRange&quot;: &quot;楼层：14-28层&quot;,
+                                &quot;EntryHumanCount&quot;: &quot;最多入住人数：2人&quot;,
+                                &quot;Smoke&quot;: &quot;无烟房：该房型可安排无烟楼层&quot;,
+                                &quot;BedWidth&quot;: &quot;大床1.98米，双床1.22米&quot;,
+                                &quot;AddBedFee&quot;: &quot;可加床：人民币&amp;nbsp;403/床/间夜&quot;,
+                                &quot;BordNetDesc&quot;: &quot;宽带：全部房间支持免费有线和无线宽带上网&quot;,
+                                &quot;IsCanReserve&quot;: true
+                            }
+                        ],
+                        &quot;ShowPictureCount&quot;: 6,
+                        &quot;HotelPictures&quot;: [
+                            {
+                                &quot;PictureAddress&quot;: &quot;http://images4.c-ctrip.com/target/hotel/7000/6168/edd0d834731d4a71b052dbcff7c453b3_130_130.jpg&quot;,
+                                &quot;PictureAddressBig&quot;: &quot;http://images4.c-ctrip.com/target/hotel/7000/6168/edd0d834731d4a71b052dbcff7c453b3_300_225.jpg&quot;,
+                                &quot;PictureTitle&quot;: &quot;豪华浦江房(浦江楼)&quot;,
+                                &quot;PictureUrl&quot;: &quot;http://hotels.ctrip.com/pic-pidedd0d834731d4a71b052dbcff7c453b3/373052.html&quot;
+                            },
+                            {
+                                &quot;PictureAddress&quot;: &quot;http://images4.c-ctrip.com/target/hotel/7000/6168/de10df90cb124d11831ecaa80561a594_130_130.jpg&quot;,
+                                &quot;PictureAddressBig&quot;: &quot;http://images4.c-ctrip.com/target/hotel/7000/6168/de10df90cb124d11831ecaa80561a594_300_225.jpg&quot;,
+                                &quot;PictureTitle&quot;: &quot;豪华浦江房(浦江楼)&quot;,
+                                &quot;PictureUrl&quot;: &quot;http://hotels.ctrip.com/pic-pidde10df90cb124d11831ecaa80561a594/373052.html&quot;
+                            }
+                        ]
+                    },
+                    {
+                        &quot;Hotel&quot;: 373052,
+                        &quot;MasterBasicRoomID&quot;: 765644,
+                        &quot;BaseRoomId&quot;: 9670,
+                        &quot;BaseRoomName&quot;: &quot;行政双床房(紫金楼)&quot;,
+                        &quot;SubRoomViews&quot;: [
+                            {
+                                &quot;Room&quot;: 259541,
+                                &quot;SubRoomName&quot;: &quot;(单人入住)&quot;,
+                                &quot;BedType&quot;: &quot;双床&quot;,
+                                &quot;BreakfastChinese&quot;: &quot;单早&quot;,
+                                &quot;Broadnet&quot;: &quot;免费&quot;,
+                                &quot;Price&quot;: 162,
+                                &quot;BaseSavePrice&quot;: 40,
+                                &quot;OrgPrice&quot;: 202,
+                                &quot;IsGift&quot;: false,
+                                &quot;AreaRange&quot;: &quot;建筑面积：40-45平方米&quot;,
+                                &quot;FloorRange&quot;: &quot;楼层：7-26、32-35层&quot;,
+                                &quot;EntryHumanCount&quot;: &quot;最多入住人数：1人&quot;,
+                                &quot;Smoke&quot;: &quot;无烟房：该房型可安排无烟楼层&quot;,
+                                &quot;BedWidth&quot;: &quot;双床1.22米&quot;,
+                                &quot;AddBedFee&quot;: &quot;不可加床&quot;,
+                                &quot;BordNetDesc&quot;: &quot;宽带：全部房间支持免费有线和无线宽带上网&quot;,
+                                &quot;IsCanReserve&quot;: true
+                            }
+                        ],
+                        &quot;ShowPictureCount&quot;: 6
+                    }
+                ]
+            }
+        ],
+        &quot;TicketInfos&quot;: [
+            {
+                &quot;TicketId&quot;: 2272575,
+                &quot;Expense&quot;: &quot;&lt;p&gt;&lt;strong&gt;一、费用包含：&lt;/strong&gt;xxtest费用包括2：费用发包含的的的的品牌水电费水电费&lt;br/&gt;xxtest 费用包括1：上海迪尼斯门票（成人票）+历史陈列馆&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;二、基本信息：&lt;/strong&gt;1.营业时间：xxtest营业时间：无休息 全年 全天24小时&lt;br/&gt;2.景区地址：xxtest地址：上海市携程网络大楼多少多少号xxtest地址2xxtest地址3&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;三、费用说明：&lt;/strong&gt;xxtest费用说明：身高超过姚明才行&lt;br/&gt;xxtest费用说明2：世界第六高塔，上海地标之一，俯瞰上海城区的最佳观景台。\n2. 这里有全球唯一的360度全透明高空观光廊、世界首台全视角全透明观光电梯、亚洲最高的旋转餐厅。\n东方明珠广播电视塔矗立于上海浦东陆家嘴黄浦江畔，与浦西的外滩隔江相望，是上海市中心最耀眼的摩天建筑之一，人们习惯称之为“东方明珠”。乘坐世界首台360度全透明观光电梯、登上351米的高空观光层、行走在全球唯一的全视角全透明高空观光廊上是这里的最大亮点，若在267米高空的旋转餐厅边品尝美食的同时边欣赏着申城夜景，更是一种超凡的体验。\n东方明珠塔高468米，是目前排名亚洲第四、世界第六的高塔，它由11个大小不一的球体串联一体，此设计来源于“大珠小珠落玉盘”的美妙意境。登上三个主球体，可站在不同的高度品赏浦江两岸的城市风光，尤其站在259米高度的全透明观光廊上，以“空中漫步”的独特方式欣赏申城全景。而夜晚登临观光层感受“不夜城”夜幕下的绚彩，更是难忘的享受。\n东方明珠还是娱乐、美食、博览以及购物的小世界。在上海城市历史发展陈列馆可以了解到上海近代历史的变迁；在太空游乐城可以看一场5D电影、坐一回世界最高的室内过山车，或是去游艺世界欢乐一把；玩累了，可以到旋转餐厅品尝世界各地美食、欣赏现场制作与烹饪表演；而太空舱则可让人们与“宇航员”来一次互动。结束旅程时，可至特色商品楼层选购纪念品，或买张明信片、盖上空中邮局的邮戳，寄给自己或者想要祝福的亲友。世界第六高塔，上海地标之一，俯瞰上海城区的最佳观景台。\n2. 这里有全球唯一的360度全透明高空观光廊、世界首台全视角全透明观光电梯、亚洲最高的旋转餐厅。\n东方明珠广播电视塔矗立于上海浦东陆家嘴黄浦江畔，与浦西的外滩隔江相望，是上海市中心最耀眼的摩天建筑之一，人们习惯称之为“东方明珠”。乘坐世界首台360度全透明观光电梯、登上351米的高空观光层、行走在全球唯一的全视角全透明高空观光廊上是这里的最大亮点，若在267米高空的旋转餐厅边品尝美食的同时边欣赏着申城夜景，更是一种超凡的体验。\n东方明珠塔高468米，是目前排名亚洲第四、世界第六的高塔，它由11个大小不一的球体串联一体，此设计来源于“大珠小珠落玉盘”的美妙意境。登上三个主球体，可站在不同的高度品赏浦江两岸的城市风光，尤其站在259米高度的全透明观光廊上，以“空中漫步”的独特方式欣赏申城全景。而夜晚登临观光层感受“不夜城”夜幕下的绚彩，更是难忘的享受。\n东方明珠还是娱乐、美食、博览以及购物的小世界。在上海城市历史发展陈列馆可以了解到上海近代历史的变迁；在太空游乐城可以看一场5D电影、坐一回世界最高的室内过山车，或是去游艺世界欢乐一把；玩累了，可以到旋转餐厅品尝世界各地美食、欣赏现场制作与烹饪表演；而太空舱则可让人们与“宇航员”来一次互动。结束旅程时，可至特色商品楼层选购纪念品，或买张明信片、盖上空中邮局的邮戳，寄给自己或者想要祝福的亲友。世界第六高塔，上海地标之一，俯瞰上海城区的最佳观景台。\n2. 这里有全球唯一的360度全透明高空观光廊、世界首台全视角全透明观光电梯、亚洲最高的旋转餐厅。\n东方明珠广播电视塔矗立于上海浦东陆家嘴黄浦江畔，与浦西的外滩隔江相望，是上海市中心最耀眼的摩天建筑之一，人们习惯称之为“东方明珠”。乘坐世界首台360度全透明观光电梯、登上351米的高空观光层、行走在全球唯一的全视角全透明高空观光廊上是这里的最大亮点，若在267米高空的旋转餐厅边品尝美食的同时边欣赏着申城夜景，更是一种超凡的体验。\n东方明珠塔高468米，是目前排名亚洲第四、世界第六的高塔，它由11个大小不一的球体串联一体，此设计来源于“大珠小珠落玉盘”的美妙意境。登上三个主球体，可站在不同的高度品赏浦江两岸的城市风光，尤其站在259米高度的全透明观光廊上，以“空中漫步”的独特方式欣赏申城全景。而夜晚登临观光层感受“不夜城”夜幕下的绚彩，更是难忘的享受。\n东方明珠还是娱乐、美食、博览以及购物的小世界。在上海城市历史发展陈列馆可以了解到上海近代历史的变迁；在太空游乐城可以看一场5D电影、坐一回世界最高的室内过山车，或是去游艺世界欢乐一把；玩累了，可以到旋转餐厅品尝世界各地美食、欣赏现场制作与烹饪表演；而太空舱则可让人们与“宇航员”来一次互动。结束旅程时，可至特色商品楼层选购纪念品，或买张明信片、盖上空中邮局的邮戳，寄给自己或者想要祝福的亲友。世界第六高塔，上海地标之一，俯瞰上海城区的最佳观景台。\n2. 这里有全球唯一的360度全透明高空观光廊、世界首台全视角全透明观光电梯、亚洲最高的旋转餐厅。\n东方明珠广播电视塔矗立于上海浦东陆家嘴黄浦江畔，与浦西的外滩隔江相望，是上海市中心最耀眼的摩天建筑之一，人们习惯称之为“东方明珠”。乘坐世界首台360度全透明观光电梯、登上351米的高空观光层、行走在全球唯一的全视角全透明高空观光廊上是这里的最大亮点，若在267米高空的旋转餐厅边品尝美食的同时边欣赏着申城夜景，更是一种超凡的体验。\n东方明珠塔高468米，是目前排名亚洲第四、世界第六的高塔，它由11个大小不一的球体串联一体，此设计来源于“大珠小珠落玉盘”的美妙意境。登上三个主球体，可站在不同的高度品赏浦江两岸的城市风光，尤其站在259米高度的全透明观光廊上，以“空中漫步”的独特方式欣赏申城全景。而夜晚登临观光层感受“不夜城”夜幕下的绚彩，更是难忘的享受。\n&lt;br/&gt;&lt;/p&gt;&quot;,
+                &quot;ExchangeType&quot;: &quot;&quot;,
+                &quot;ImportantItems&quot;: [
+                    &quot;重要条款描述内容&quot;,
+                    &quot;使用方式：太坑爹了吧&quot;
+                ],
+                &quot;ProductId&quot;: 2267929,
+                &quot;Name&quot;: &quot;[02春秋淹城] 门票 01 2272575&quot;,
+                &quot;UseDate&quot;: &quot;0001-01-01 00:00:00&quot;,
+                &quot;Quantity&quot;: 2,
+                &quot;Price&quot;: 80,
+                &quot;ProductType&quot;: 1,
+                &quot;IsOption&quot;: false,
+                &quot;UsePerson&quot;: 1,
+                &quot;IsTicket&quot;: true
+            }
+        ],
+        &quot;InsuranceInfos&quot;: [
+            {
+                &quot;ProductId&quot;: 2270373,
+                &quot;Name&quot;: &quot;0元抢购·科帕奇自驾租车服务 时间（1~100天）可保证&quot;,
+                &quot;UseDate&quot;: &quot;0001-01-01 00:00:00&quot;,
+                &quot;Quantity&quot;: 0,
+                &quot;Price&quot;: 80,
+                &quot;ProductType&quot;: 0,
+                &quot;IsOption&quot;: false,
+                &quot;UsePerson&quot;: 0,
+                &quot;IsTicket&quot;: false
+            },
+            {
+                &quot;ProductId&quot;: 2269075,
+                &quot;Name&quot;: &quot;翁文杰H+F保险-临时更新产品名称测试折行显示正确-正确换行显示1-3天&quot;,
+                &quot;UseDate&quot;: &quot;0001-01-01 00:00:00&quot;,
+                &quot;Quantity&quot;: 0,
+                &quot;Price&quot;: 47,
+                &quot;ProductType&quot;: 0,
+                &quot;IsOption&quot;: false,
+                &quot;UsePerson&quot;: 0,
+                &quot;IsTicket&quot;: false
+            },
+            {
+                &quot;ProductId&quot;: 2269292,
+                &quot;Name&quot;: &quot;可选项 平安保险（适用1—4天）名称加长临时测试用-折行完整显示&quot;,
+                &quot;UseDate&quot;: &quot;0001-01-01 00:00:00&quot;,
+                &quot;Quantity&quot;: 0,
+                &quot;Price&quot;: 70,
+                &quot;ProductType&quot;: 0,
+                &quot;IsOption&quot;: false,
+                &quot;UsePerson&quot;: 0,
+                &quot;IsTicket&quot;: false
+            },
+            {
+                &quot;ProductId&quot;: 2269293,
+                &quot;Name&quot;: &quot;可选项 华泰保险（适用5—10天）&quot;,
+                &quot;UseDate&quot;: &quot;0001-01-01 00:00:00&quot;,
+                &quot;Quantity&quot;: 0,
+                &quot;Price&quot;: 70,
+                &quot;ProductType&quot;: 0,
+                &quot;IsOption&quot;: false,
+                &quot;UsePerson&quot;: 0,
+                &quot;IsTicket&quot;: false
+            }
+        ]
+    },
+    &quot;info&quot;: &quot;返回成功&quot;
+}</code></pre></dd>
+			<dt>none</dt>
+			<dd><pre><code class="language-json">{
+    &quot;success&quot;: false,
+    &quot;data&quot;: null,
+    &quot;info&quot;: &quot;未查到房型数据&quot;
+}</code></pre></dd>
+			<dt>error</dt>
+			<dd><pre><code class="language-json">{
+    &quot;success&quot;: false,
+    &quot;data&quot;: null,
+    &quot;info&quot;: &quot;查询失败&quot;
+}</code></pre></dd>
+		</dl>
+	</div>
+</div>
+<!-- rawgit.com 与 github pages 的方案太慢了 -->
+<script type="text/javascript" src="../scripts/highlight.pack.js"></script>
+<script type="text/javascript">
+hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>

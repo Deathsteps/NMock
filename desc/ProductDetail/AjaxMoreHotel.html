@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <title>AjaxMoreHotel接口文档</title>
+  <style type="text/css">
+	body { font-family: Consolas,"Microsoft YaHei"; }
+	h3 {}
+	p, .p { padding: 10px 15px; color: #333; background: #dde0f0; border-left: 6px solid #88F;}
+	strong { display: inline-block; width: 180px; font-size: 18px;}
+	ul { padding: 0; margin: 0; }
+	li { padding: 0; margin: 5px auto; list-style: none;}
+	dt { font-weight: bold; font-size: 18px; }
+	dd { margin: 8px auto;}
+  </style>
+  <link rel="stylesheet" href="../styles/tomorrow.css">
+</head>
+<body>
+	
+<div>
+	<h3>接口名称</h3>
+	<p>AjaxMoreHotel</p>
+	<h3>接口描述</h3>
+	<p>查询更多酒店数据</p>
+</div>
+
+<div>
+	<h3>请求地址</h3>
+	<p>http://vacations.ctrip.com/DIY/Ajax/ProductDetail/AjaxMoreHotel.aspx</p>
+	<h3>请求方式</h3>
+	<p>GET</p>
+	<h3>请求参数</h3>
+	<div class="p">
+		<ul>
+			<li>
+				<strong>UseDate</strong>
+				使用日期
+			</li>
+			<li>
+				<strong>PeggingParams</strong>
+				不知道是什么的参数
+			</li>
+		</ul>
+	</div>
+	<h3>请求Mock数据</h3>
+	<div class="p">
+		<dl>
+			<dt>normal</dt>
+			<dd>2014-09-25,</dd>
+		</dl>
+	</div>
+</div>
+
+<div>
+	<h3>响应内容</h3>
+	<div class="p">
+		<dl>
+			<dt>normal</dt>
+			<dd><pre><code class="language-json">{
+    &quot;success&quot;: true,
+    &quot;data&quot;: [
+        {
+            &quot;CheckInDate&quot;: &quot;0001-01-01 00:00:00&quot;,
+            &quot;CheckOutDate&quot;: &quot;0001-01-01 00:00:00&quot;,
+            &quot;HotelCount&quot;: 0,
+            &quot;HotelBaseInfo&quot;: {
+                &quot;MasterHotelId&quot;: 373052,
+                &quot;Hotel&quot;: 373052,
+                &quot;HotelName&quot;: &quot;上海浦东香格里拉大酒店&quot;,
+                &quot;City&quot;: 2,
+                &quot;GLON&quot;: 121.499575,
+                &quot;GLAT&quot;: 31.23484718,
+                &quot;MidLogoUrl&quot;: &quot;http://images4.c-ctrip.com/target/hotel/7000/6168/d13ecaf40a61488e8de794b9bb9358fe_300_225.jpg&quot;,
+                &quot;Distance&quot;: &quot;0.54&quot;,
+                &quot;ScoreLink&quot;: &quot;http://hotels.ctrip.com/hotel/dianping/373052.html&quot;,
+                &quot;Score&quot;: 4.8,
+                &quot;NoVoters&quot;: 1620,
+                &quot;Star&quot;: 0,
+                &quot;StarDesc&quot;: &quot;携程用户评定为6钻&quot;,
+                &quot;Address&quot;: &quot;富城路33号&quot;,
+                &quot;IsStarLicence&quot;: true,
+                &quot;CustomerEval&quot;: 6,
+                &quot;SubRoomCount&quot;: 7,
+                &quot;CanBookRoomNum&quot;: 0
+            },
+            &quot;RoomViews&quot;: [
+                {
+                    &quot;Hotel&quot;: 373052,
+                    &quot;MasterBasicRoomID&quot;: 514528,
+                    &quot;BaseRoomId&quot;: 12830,
+                    &quot;BaseRoomName&quot;: &quot;豪华浦江房(浦江楼)&quot;,
+                    &quot;SubRoomViews&quot;: [
+                        {
+                            &quot;Room&quot;: 705438,
+                            &quot;SubRoomName&quot;: &quot;(双人入住)&quot;,
+                            &quot;BedType&quot;: &quot;大/双&quot;,
+                            &quot;BreakfastChinese&quot;: &quot;无早&quot;,
+                            &quot;Broadnet&quot;: &quot;免费&quot;,
+                            &quot;Price&quot;: 161,
+                            &quot;BaseSavePrice&quot;: 40,
+                            &quot;OrgPrice&quot;: 201,
+                            &quot;Payment&quot;: &quot;PP&quot;,
+                            &quot;IsGift&quot;: false,
+                            &quot;AreaRange&quot;: &quot;建筑面积：40-42平方米&quot;,
+                            &quot;FloorRange&quot;: &quot;楼层：14-28层&quot;,
+                            &quot;EntryHumanCount&quot;: &quot;最多入住人数：2人&quot;,
+                            &quot;Smoke&quot;: &quot;无烟房：该房型可安排无烟楼层&quot;,
+                            &quot;BedWidth&quot;: &quot;大床1.98米，双床1.22米&quot;,
+                            &quot;AddBedFee&quot;: &quot;可加床：人民币&amp;nbsp;403/床/间夜&quot;,
+                            &quot;BordNetDesc&quot;: &quot;宽带：全部房间支持免费有线和无线宽带上网&quot;,
+                            &quot;IsCanReserve&quot;: true
+                        }
+                    ],
+                    &quot;ShowPictureCount&quot;: 6,
+                    &quot;HotelPictures&quot;: [
+                        {
+                            &quot;PictureAddress&quot;: &quot;http://images4.c-ctrip.com/target/hotel/7000/6168/edd0d834731d4a71b052dbcff7c453b3_130_130.jpg&quot;,
+                            &quot;PictureAddressBig&quot;: &quot;http://images4.c-ctrip.com/target/hotel/7000/6168/edd0d834731d4a71b052dbcff7c453b3_300_225.jpg&quot;,
+                            &quot;PictureTitle&quot;: &quot;豪华浦江房(浦江楼)&quot;,
+                            &quot;PictureUrl&quot;: &quot;http://hotels.ctrip.com/pic-pidedd0d834731d4a71b052dbcff7c453b3/373052.html&quot;
+                        },
+                        {
+                            &quot;PictureAddress&quot;: &quot;http://images4.c-ctrip.com/target/hotel/7000/6168/de10df90cb124d11831ecaa80561a594_130_130.jpg&quot;,
+                            &quot;PictureAddressBig&quot;: &quot;http://images4.c-ctrip.com/target/hotel/7000/6168/de10df90cb124d11831ecaa80561a594_300_225.jpg&quot;,
+                            &quot;PictureTitle&quot;: &quot;豪华浦江房(浦江楼)&quot;,
+                            &quot;PictureUrl&quot;: &quot;http://hotels.ctrip.com/pic-pidde10df90cb124d11831ecaa80561a594/373052.html&quot;
+                        }
+                    ]
+                },
+                {
+                    &quot;Hotel&quot;: 373052,
+                    &quot;MasterBasicRoomID&quot;: 765644,
+                    &quot;BaseRoomId&quot;: 9670,
+                    &quot;BaseRoomName&quot;: &quot;行政双床房(紫金楼)&quot;,
+                    &quot;SubRoomViews&quot;: [
+                        {
+                            &quot;Room&quot;: 259541,
+                            &quot;SubRoomName&quot;: &quot;(单人入住)&quot;,
+                            &quot;BedType&quot;: &quot;双床&quot;,
+                            &quot;BreakfastChinese&quot;: &quot;单早&quot;,
+                            &quot;Broadnet&quot;: &quot;免费&quot;,
+                            &quot;Price&quot;: 162,
+                            &quot;BaseSavePrice&quot;: 40,
+                            &quot;OrgPrice&quot;: 202,
+                            &quot;Payment&quot;: &quot;PP&quot;,
+                            &quot;IsGift&quot;: false,
+                            &quot;AreaRange&quot;: &quot;建筑面积：40-45平方米&quot;,
+                            &quot;FloorRange&quot;: &quot;楼层：7-26、32-35层&quot;,
+                            &quot;EntryHumanCount&quot;: &quot;最多入住人数：1人&quot;,
+                            &quot;Smoke&quot;: &quot;无烟房：该房型可安排无烟楼层&quot;,
+                            &quot;BedWidth&quot;: &quot;双床1.22米&quot;,
+                            &quot;AddBedFee&quot;: &quot;不可加床&quot;,
+                            &quot;BordNetDesc&quot;: &quot;宽带：全部房间支持免费有线和无线宽带上网&quot;,
+                            &quot;IsCanReserve&quot;: true
+                        }
+                    ],
+                    &quot;ShowPictureCount&quot;: 6
+                }
+            ]
+        },
+        {
+            &quot;CheckInDate&quot;: &quot;0001-01-01 00:00:00&quot;,
+            &quot;CheckOutDate&quot;: &quot;0001-01-01 00:00:00&quot;,
+            &quot;HotelCount&quot;: 0,
+            &quot;HotelBaseInfo&quot;: {
+                &quot;MasterHotelId&quot;: 426312,
+                &quot;Hotel&quot;: 426312,
+                &quot;HotelName&quot;: &quot;上海东方滨江大酒店（国际会议中心）&quot;,
+                &quot;City&quot;: 2,
+                &quot;GLON&quot;: 121.4971289,
+                &quot;GLAT&quot;: 31.23950518,
+                &quot;MidLogoUrl&quot;: &quot;http://pic.ctrip.com/hotels110127/hotel_example.jpg&quot;,
+                &quot;Distance&quot;: &quot;0.25&quot;,
+                &quot;ScoreLink&quot;: &quot;http://hotels.ctrip.com/hotel/dianping/426312.html&quot;,
+                &quot;Score&quot;: 4.6,
+                &quot;NoVoters&quot;: 1299,
+                &quot;Star&quot;: 0,
+                &quot;StarDesc&quot;: &quot;携程用户评定为5钻&quot;,
+                &quot;Address&quot;: &quot;滨江大道2727号&quot;,
+                &quot;IsStarLicence&quot;: true,
+                &quot;CustomerEval&quot;: 5,
+                &quot;SubRoomCount&quot;: 2,
+                &quot;CanBookRoomNum&quot;: 0
+            },
+            &quot;RoomViews&quot;: [
+                {
+                    &quot;Hotel&quot;: 426312,
+                    &quot;MasterBasicRoomID&quot;: 685306,
+                    &quot;BaseRoomId&quot;: 37644,
+                    &quot;BaseRoomName&quot;: &quot;高级江景房&quot;,
+                    &quot;SubRoomViews&quot;: [
+                        {
+                            &quot;Room&quot;: 9385,
+                            &quot;SubRoomName&quot;: &quot;&quot;,
+                            &quot;BedType&quot;: &quot;大/双&quot;,
+                            &quot;BreakfastChinese&quot;: &quot;无早&quot;,
+                            &quot;Broadnet&quot;: &quot;免费&quot;,
+                            &quot;Price&quot;: 1795,
+                            &quot;BaseSavePrice&quot;: 40,
+                            &quot;OrgPrice&quot;: 1835,
+                            &quot;Payment&quot;: &quot;PP&quot;,
+                            &quot;IsGift&quot;: false,
+                            &quot;AreaRange&quot;: &quot;建筑面积：40平方米&quot;,
+                            &quot;FloorRange&quot;: &quot;楼层：2-6层&quot;,
+                            &quot;EntryHumanCount&quot;: &quot;最多入住人数：2人&quot;,
+                            &quot;Smoke&quot;: &quot;无烟房：该房型可安排无烟楼层&quot;,
+                            &quot;BedWidth&quot;: &quot;大床1.80米，双床1.20米&quot;,
+                            &quot;AddBedFee&quot;: &quot;可加床：人民币&amp;nbsp;350/床/间夜&quot;,
+                            &quot;BordNetDesc&quot;: &quot;宽带：全部房间支持免费有线宽带上网。&quot;,
+                            &quot;IsCanReserve&quot;: true
+                        }
+                    ],
+                    &quot;ShowPictureCount&quot;: 6
+                },
+                {
+                    &quot;Hotel&quot;: 426312,
+                    &quot;MasterBasicRoomID&quot;: 685307,
+                    &quot;BaseRoomId&quot;: 37640,
+                    &quot;BaseRoomName&quot;: &quot;高级园景房&quot;,
+                    &quot;SubRoomViews&quot;: [
+                        {
+                            &quot;Room&quot;: 9384,
+                            &quot;SubRoomName&quot;: &quot;&quot;,
+                            &quot;BedType&quot;: &quot;大/双&quot;,
+                            &quot;BreakfastChinese&quot;: &quot;无早&quot;,
+                            &quot;Broadnet&quot;: &quot;免费&quot;,
+                            &quot;Price&quot;: 1892,
+                            &quot;BaseSavePrice&quot;: 40,
+                            &quot;OrgPrice&quot;: 1932,
+                            &quot;Payment&quot;: &quot;PP&quot;,
+                            &quot;IsGift&quot;: false,
+                            &quot;AreaRange&quot;: &quot;建筑面积：30平方米&quot;,
+                            &quot;FloorRange&quot;: &quot;楼层：3-6层&quot;,
+                            &quot;EntryHumanCount&quot;: &quot;最多入住人数：2人&quot;,
+                            &quot;Smoke&quot;: &quot;无烟房：该房型可安排无烟楼层&quot;,
+                            &quot;BedWidth&quot;: &quot;大床1.80米，双床1.20米&quot;,
+                            &quot;AddBedFee&quot;: &quot;可加床：人民币&amp;nbsp;350/床/间夜&quot;,
+                            &quot;BordNetDesc&quot;: &quot;宽带：全部房间支持免费有线宽带上网。&quot;,
+                            &quot;IsCanReserve&quot;: true
+                        }
+                    ],
+                    &quot;ShowPictureCount&quot;: 6
+                }
+            ]
+        },
+        {
+            &quot;CheckInDate&quot;: &quot;0001-01-01 00:00:00&quot;,
+            &quot;CheckOutDate&quot;: &quot;0001-01-01 00:00:00&quot;,
+            &quot;HotelCount&quot;: 0,
+            &quot;HotelBaseInfo&quot;: {
+                &quot;MasterHotelId&quot;: 425821,
+                &quot;Hotel&quot;: 425821,
+                &quot;HotelName&quot;: &quot;上海凯宾斯基大酒店&quot;,
+                &quot;City&quot;: 2,
+                &quot;GLON&quot;: 121.504465341568,
+                &quot;GLAT&quot;: 31.2420219309263,
+                &quot;MidLogoUrl&quot;: &quot;http://images4.c-ctrip.com/target/hotel/74000/73811/ca628941825f4318902471397782ae78_300_225.jpg&quot;,
+                &quot;Distance&quot;: &quot;0.52&quot;,
+                &quot;ScoreLink&quot;: &quot;http://hotels.ctrip.com/hotel/dianping/425821.html&quot;,
+                &quot;Score&quot;: 4.7,
+                &quot;NoVoters&quot;: 1585,
+                &quot;Star&quot;: 0,
+                &quot;StarDesc&quot;: &quot;携程用户评定为5钻&quot;,
+                &quot;Address&quot;: &quot;陆家嘴环路1288号&quot;,
+                &quot;IsStarLicence&quot;: false,
+                &quot;CustomerEval&quot;: 5,
+                &quot;SubRoomCount&quot;: 2,
+                &quot;CanBookRoomNum&quot;: 0
+            },
+            &quot;RoomViews&quot;: [
+                {
+                    &quot;Hotel&quot;: 425821,
+                    &quot;MasterBasicRoomID&quot;: 682935,
+                    &quot;BaseRoomId&quot;: 9616,
+                    &quot;BaseRoomName&quot;: &quot;高级江景房&quot;,
+                    &quot;SubRoomViews&quot;: [
+                        {
+                            &quot;Room&quot;: 209980,
+                            &quot;SubRoomName&quot;: &quot;&quot;,
+                            &quot;BedType&quot;: &quot;大/双&quot;,
+                            &quot;BreakfastChinese&quot;: &quot;双早&quot;,
+                            &quot;Broadnet&quot;: &quot;收费&quot;,
+                            &quot;Price&quot;: 460,
+                            &quot;BaseSavePrice&quot;: 40,
+                            &quot;OrgPrice&quot;: 500,
+                            &quot;Payment&quot;: &quot;PP&quot;,
+                            &quot;IsGift&quot;: false,
+                            &quot;AreaRange&quot;: &quot;建筑面积：43-45平方米&quot;,
+                            &quot;FloorRange&quot;: &quot;楼层：5-26层&quot;,
+                            &quot;EntryHumanCount&quot;: &quot;最多入住人数：2人&quot;,
+                            &quot;Smoke&quot;: &quot;无烟房：该房型有无烟房&quot;,
+                            &quot;BedWidth&quot;: &quot;大床2.00米，双床1.35米&quot;,
+                            &quot;AddBedFee&quot;: &quot;不可加床&quot;,
+                            &quot;BordNetDesc&quot;: &quot;宽带：全部房间支持收费有线宽带上网。（120元/天）&quot;,
+                            &quot;IsCanReserve&quot;: true
+                        }
+                    ],
+                    &quot;ShowPictureCount&quot;: 6,
+                    &quot;HotelPictures&quot;: [
+                        {
+                            &quot;PictureAddress&quot;: &quot;http://images4.c-ctrip.com/target/hotel/74000/73811/9903d3b9e39a44779978d6e64fcc5d23_130_130.jpg&quot;,
+                            &quot;PictureAddressBig&quot;: &quot;http://images4.c-ctrip.com/target/hotel/74000/73811/9903d3b9e39a44779978d6e64fcc5d23_300_225.jpg&quot;,
+                            &quot;PictureTitle&quot;: &quot;高级江景房&quot;,
+                            &quot;PictureUrl&quot;: &quot;http://hotels.ctrip.com/pic-pid9903d3b9e39a44779978d6e64fcc5d23/425821.html&quot;
+                        },
+                        {
+                            &quot;PictureAddress&quot;: &quot;http://images4.c-ctrip.com/target/hotel/74000/73811/2b77f5da447f4456a01a0b15f6fcbde5_130_130.jpg&quot;,
+                            &quot;PictureAddressBig&quot;: &quot;http://images4.c-ctrip.com/target/hotel/74000/73811/2b77f5da447f4456a01a0b15f6fcbde5_300_225.jpg&quot;,
+                            &quot;PictureTitle&quot;: &quot;高级江景房&quot;,
+                            &quot;PictureUrl&quot;: &quot;http://hotels.ctrip.com/pic-pid2b77f5da447f4456a01a0b15f6fcbde5/425821.html&quot;
+                        }
+                    ]
+                },
+                {
+                    &quot;Hotel&quot;: 425821,
+                    &quot;MasterBasicRoomID&quot;: 682937,
+                    &quot;BaseRoomId&quot;: 9615,
+                    &quot;BaseRoomName&quot;: &quot;高级景观房&quot;,
+                    &quot;SubRoomViews&quot;: [
+                        {
+                            &quot;Room&quot;: 209979,
+                            &quot;SubRoomName&quot;: &quot;&quot;,
+                            &quot;BedType&quot;: &quot;大/双&quot;,
+                            &quot;BreakfastChinese&quot;: &quot;无早&quot;,
+                            &quot;Broadnet&quot;: &quot;收费&quot;,
+                            &quot;Price&quot;: 2159,
+                            &quot;BaseSavePrice&quot;: 40,
+                            &quot;OrgPrice&quot;: 2199,
+                            &quot;Payment&quot;: &quot;PP&quot;,
+                            &quot;IsGift&quot;: false,
+                            &quot;AreaRange&quot;: &quot;建筑面积：43-45平方米&quot;,
+                            &quot;FloorRange&quot;: &quot;楼层：5-26层&quot;,
+                            &quot;EntryHumanCount&quot;: &quot;最多入住人数：2人&quot;,
+                            &quot;Smoke&quot;: &quot;无烟房：该房型有无烟房&quot;,
+                            &quot;BedWidth&quot;: &quot;大床2.00米，双床1.40米&quot;,
+                            &quot;AddBedFee&quot;: &quot;不可加床&quot;,
+                            &quot;BordNetDesc&quot;: &quot;宽带：全部房间支持收费有线宽带上网。（120元/天）&quot;,
+                            &quot;IsCanReserve&quot;: true
+                        }
+                    ],
+                    &quot;ShowPictureCount&quot;: 6,
+                    &quot;HotelPictures&quot;: [
+                        {
+                            &quot;PictureAddress&quot;: &quot;http://images4.c-ctrip.com/target/hotel/74000/73811/7e37c9446d224bae967b20b5fce104bf_130_130.jpg&quot;,
+                            &quot;PictureAddressBig&quot;: &quot;http://images4.c-ctrip.com/target/hotel/74000/73811/7e37c9446d224bae967b20b5fce104bf_300_225.jpg&quot;,
+                            &quot;PictureTitle&quot;: &quot;高级景观房&quot;,
+                            &quot;PictureUrl&quot;: &quot;http://hotels.ctrip.com/pic-pid7e37c9446d224bae967b20b5fce104bf/425821.html&quot;
+                        },
+                        {
+                            &quot;PictureAddress&quot;: &quot;http://images4.c-ctrip.com/target/hotel/74000/73811/6d334b0996d74f3199ff40aa3e6d42f0_130_130.jpg&quot;,
+                            &quot;PictureAddressBig&quot;: &quot;http://images4.c-ctrip.com/target/hotel/74000/73811/6d334b0996d74f3199ff40aa3e6d42f0_300_225.jpg&quot;,
+                            &quot;PictureTitle&quot;: &quot;高级景观房&quot;,
+                            &quot;PictureUrl&quot;: &quot;http://hotels.ctrip.com/pic-pid6d334b0996d74f3199ff40aa3e6d42f0/425821.html&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;CheckInDate&quot;: &quot;0001-01-01 00:00:00&quot;,
+            &quot;CheckOutDate&quot;: &quot;0001-01-01 00:00:00&quot;,
+            &quot;HotelCount&quot;: 0,
+            &quot;HotelBaseInfo&quot;: {
+                &quot;MasterHotelId&quot;: -1,
+                &quot;Hotel&quot;: 72372,
+                &quot;HotelName&quot;: &quot;上海天山御庭酒店公寓（原长宁御庭服务公寓）&quot;,
+                &quot;City&quot;: 2,
+                &quot;GLON&quot;: 121.387714,
+                &quot;GLAT&quot;: 31.215232,
+                &quot;MidLogoUrl&quot;: &quot;http://images4.c-ctrip.com/target/hotel/73000/72372/FEC2D743-D1C3-4E14-9705-EC91FB4C5BA4_300_225.jpg&quot;,
+                &quot;Distance&quot;: &quot;11.01&quot;,
+                &quot;ScoreLink&quot;: &quot;http://hotels.ctrip.com/hotel/dianping/72372.html&quot;,
+                &quot;Score&quot;: 4.4,
+                &quot;NoVoters&quot;: 136,
+                &quot;Star&quot;: 0,
+                &quot;StarDesc&quot;: &quot;携程用户评定为3.5钻&quot;,
+                &quot;Address&quot;: &quot;上海市长宁区天山路338弄2号楼、4号楼5楼&quot;,
+                &quot;IsStarLicence&quot;: false,
+                &quot;CustomerEval&quot;: 3.5,
+                &quot;SubRoomCount&quot;: 2,
+                &quot;CanBookRoomNum&quot;: 0
+            },
+            &quot;RoomViews&quot;: [
+                {
+                    &quot;Hotel&quot;: 72372,
+                    &quot;MasterBasicRoomID&quot;: 65471,
+                    &quot;BaseRoomId&quot;: 65471,
+                    &quot;BaseRoomName&quot;: &quot;标准套房&quot;,
+                    &quot;SubRoomViews&quot;: [
+                        {
+                            &quot;Room&quot;: 205637,
+                            &quot;SubRoomName&quot;: &quot;&quot;,
+                            &quot;BedType&quot;: &quot;大床&quot;,
+                            &quot;BreakfastChinese&quot;: &quot;无早&quot;,
+                            &quot;Broadnet&quot;: &quot;免费&quot;,
+                            &quot;Price&quot;: 1859,
+                            &quot;BaseSavePrice&quot;: 40,
+                            &quot;OrgPrice&quot;: 1899,
+                            &quot;Payment&quot;: &quot;PP&quot;,
+                            &quot;IsGift&quot;: false,
+                            &quot;AreaRange&quot;: &quot;建筑面积：60平方米&quot;,
+                            &quot;FloorRange&quot;: &quot;楼层：6-17层&quot;,
+                            &quot;EntryHumanCount&quot;: &quot;最多入住人数：2人&quot;,
+                            &quot;Smoke&quot;: &quot;无烟房：该房型可安排无烟楼层&quot;,
+                            &quot;BedWidth&quot;: &quot;大床1.50米&quot;,
+                            &quot;AddBedFee&quot;: &quot;可加床：人民币&amp;nbsp;150/床/间夜&quot;,
+                            &quot;BordNetDesc&quot;: &quot;宽带：全部房间支持免费有线和无线宽带上网&quot;,
+                            &quot;IsCanReserve&quot;: true
+                        }
+                    ],
+                    &quot;ShowPictureCount&quot;: 6,
+                    &quot;HotelPictures&quot;: [
+                        {
+                            &quot;PictureAddress&quot;: &quot;http://images4.c-ctrip.com/target/hotel/73000/72372/1E8657E1-E554-4AAD-9367-5F9E8449CA40_130_130.jpg&quot;,
+                            &quot;PictureAddressBig&quot;: &quot;http://images4.c-ctrip.com/target/hotel/73000/72372/1E8657E1-E554-4AAD-9367-5F9E8449CA40_300_225.jpg&quot;,
+                            &quot;PictureTitle&quot;: &quot;标准套房&quot;,
+                            &quot;PictureUrl&quot;: &quot;http://hotels.ctrip.com/pic-pid1E8657E1-E554-4AAD-9367-5F9E8449CA40/72372.html&quot;
+                        }
+                    ]
+                },
+                {
+                    &quot;Hotel&quot;: 72372,
+                    &quot;MasterBasicRoomID&quot;: 65472,
+                    &quot;BaseRoomId&quot;: 65472,
+                    &quot;BaseRoomName&quot;: &quot;豪华套房&quot;,
+                    &quot;SubRoomViews&quot;: [
+                        {
+                            &quot;Room&quot;: 205638,
+                            &quot;SubRoomName&quot;: &quot;&quot;,
+                            &quot;BedType&quot;: &quot;大床&quot;,
+                            &quot;BreakfastChinese&quot;: &quot;无早&quot;,
+                            &quot;Broadnet&quot;: &quot;免费&quot;,
+                            &quot;Price&quot;: 1980,
+                            &quot;BaseSavePrice&quot;: 40,
+                            &quot;OrgPrice&quot;: 2020,
+                            &quot;Payment&quot;: &quot;PP&quot;,
+                            &quot;IsGift&quot;: false,
+                            &quot;AreaRange&quot;: &quot;建筑面积：116平方米&quot;,
+                            &quot;FloorRange&quot;: &quot;楼层：6-16层&quot;,
+                            &quot;EntryHumanCount&quot;: &quot;最多入住人数：4人&quot;,
+                            &quot;Smoke&quot;: &quot;无烟房：该房型可安排无烟楼层&quot;,
+                            &quot;BedWidth&quot;: &quot;大床1.80米&quot;,
+                            &quot;AddBedFee&quot;: &quot;可加床：人民币&amp;nbsp;150/床/间夜&quot;,
+                            &quot;BordNetDesc&quot;: &quot;宽带：全部房间支持免费有线和无线宽带上网&quot;,
+                            &quot;IsCanReserve&quot;: true
+                        }
+                    ],
+                    &quot;ShowPictureCount&quot;: 6,
+                    &quot;HotelPictures&quot;: [
+                        {
+                            &quot;PictureAddress&quot;: &quot;http://images4.c-ctrip.com/target/hotel/73000/72372/19CD7659828F4508B15655BEA5F63DA7_130_130.Jpg&quot;,
+                            &quot;PictureAddressBig&quot;: &quot;http://images4.c-ctrip.com/target/hotel/73000/72372/19CD7659828F4508B15655BEA5F63DA7_300_225.Jpg&quot;,
+                            &quot;PictureTitle&quot;: &quot;豪华套房&quot;,
+                            &quot;PictureUrl&quot;: &quot;http://hotels.ctrip.com/pic-pid19CD7659828F4508B15655BEA5F63DA7/72372.html&quot;
+                        },
+                        {
+                            &quot;PictureAddress&quot;: &quot;http://images4.c-ctrip.com/target/hotel/73000/72372/CDDD3B3B-8D01-448F-B712-F1B0D8BC6D2D_130_130.jpg&quot;,
+                            &quot;PictureAddressBig&quot;: &quot;http://images4.c-ctrip.com/target/hotel/73000/72372/CDDD3B3B-8D01-448F-B712-F1B0D8BC6D2D_300_225.jpg&quot;,
+                            &quot;PictureTitle&quot;: &quot;豪华套房&quot;,
+                            &quot;PictureUrl&quot;: &quot;http://hotels.ctrip.com/pic-pidCDDD3B3B-8D01-448F-B712-F1B0D8BC6D2D/72372.html&quot;
+                        },
+                        {
+                            &quot;PictureAddress&quot;: &quot;http://images4.c-ctrip.com/target/hotel/73000/72372/E1A4288D-0918-452E-8B46-F39C45614A93_130_130.jpg&quot;,
+                            &quot;PictureAddressBig&quot;: &quot;http://images4.c-ctrip.com/target/hotel/73000/72372/E1A4288D-0918-452E-8B46-F39C45614A93_300_225.jpg&quot;,
+                            &quot;PictureTitle&quot;: &quot;豪华套房&quot;,
+                            &quot;PictureUrl&quot;: &quot;http://hotels.ctrip.com/pic-pidE1A4288D-0918-452E-8B46-F39C45614A93/72372.html&quot;
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            &quot;CheckInDate&quot;: &quot;0001-01-01 00:00:00&quot;,
+            &quot;CheckOutDate&quot;: &quot;0001-01-01 00:00:00&quot;,
+            &quot;HotelCount&quot;: 0,
+            &quot;HotelBaseInfo&quot;: {
+                &quot;MasterHotelId&quot;: 396376,
+                &quot;Hotel&quot;: 396376,
+                &quot;HotelName&quot;: &quot;上海虹桥宾馆““&quot;,
+                &quot;City&quot;: 2,
+                &quot;GLON&quot;: 121.410206,
+                &quot;GLAT&quot;: 31.204012,
+                &quot;MidLogoUrl&quot;: &quot;http://images4.c-ctrip.com/target/hotel/1000/636/360f1e2aa8de490c938b294c4c7539a5_300_225.jpg&quot;,
+                &quot;Distance&quot;: &quot;9.40&quot;,
+                &quot;ScoreLink&quot;: &quot;http://hotels.ctrip.com/hotel/dianping/396376.html&quot;,
+                &quot;Score&quot;: 4.3,
+                &quot;NoVoters&quot;: 6590,
+                &quot;Star&quot;: 0,
+                &quot;StarDesc&quot;: &quot;携程用户评定为1.5钻&quot;,
+                &quot;Address&quot;: &quot;延安西路2000号““&quot;,
+                &quot;IsStarLicence&quot;: true,
+                &quot;CustomerEval&quot;: 1.5,
+                &quot;SubRoomCount&quot;: 1,
+                &quot;CanBookRoomNum&quot;: 0
+            },
+            &quot;RoomViews&quot;: [
+                {
+                    &quot;Hotel&quot;: 396376,
+                    &quot;MasterBasicRoomID&quot;: 816846,
+                    &quot;BaseRoomId&quot;: 66483,
+                    &quot;BaseRoomName&quot;: &quot;豪华苑景房&quot;,
+                    &quot;SubRoomViews&quot;: [
+                        {
+                            &quot;Room&quot;: 2101792,
+                            &quot;SubRoomName&quot;: &quot;&quot;,
+                            &quot;BedType&quot;: &quot;大/双&quot;,
+                            &quot;BreakfastChinese&quot;: &quot;无早&quot;,
+                            &quot;Broadnet&quot;: &quot;免费&quot;,
+                            &quot;Price&quot;: 521,
+                            &quot;BaseSavePrice&quot;: 40,
+                            &quot;OrgPrice&quot;: 561,
+                            &quot;Payment&quot;: &quot;PP&quot;,
+                            &quot;IsGift&quot;: false,
+                            &quot;AreaRange&quot;: &quot;建筑面积：32平方米&quot;,
+                            &quot;FloorRange&quot;: &quot;楼层：1-3层&quot;,
+                            &quot;EntryHumanCount&quot;: &quot;最多入住人数：2人&quot;,
+                            &quot;Smoke&quot;: &quot;无烟房：该房型可安排无烟楼层&quot;,
+                            &quot;BedWidth&quot;: &quot;大床1.80米，双床1.20米&quot;,
+                            &quot;AddBedFee&quot;: &quot;不可加床&quot;,
+                            &quot;BordNetDesc&quot;: &quot;宽带：全部房间支持免费有线宽带上网。&quot;,
+                            &quot;IsCanReserve&quot;: true
+                        }
+                    ],
+                    &quot;ShowPictureCount&quot;: 6,
+                    &quot;HotelPictures&quot;: [
+                        {
+                            &quot;PictureAddress&quot;: &quot;http://images4.c-ctrip.com/target/hotel/19000/18349/e9bea7ab3bf442c08a9fee3e4cd14ec0_130_130.jpg&quot;,
+                            &quot;PictureAddressBig&quot;: &quot;http://images4.c-ctrip.com/target/hotel/19000/18349/e9bea7ab3bf442c08a9fee3e4cd14ec0_300_225.jpg&quot;,
+                            &quot;PictureTitle&quot;: &quot;豪华苑景房&quot;,
+                            &quot;PictureUrl&quot;: &quot;http://hotels.ctrip.com/pic-pide9bea7ab3bf442c08a9fee3e4cd14ec0/396376.html&quot;
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    &quot;info&quot;: &quot;返回成功&quot;
+}</code></pre></dd>
+			<dt>none</dt>
+			<dd><pre><code class="language-json">{
+    &quot;success&quot;: false,
+    &quot;data&quot;: null,
+    &quot;info&quot;: &quot;未查到房型数据&quot;
+}</code></pre></dd>
+			<dt>error</dt>
+			<dd><pre><code class="language-json">{
+    &quot;success&quot;: false,
+    &quot;data&quot;: null,
+    &quot;info&quot;: &quot;查询失败&quot;
+}</code></pre></dd>
+		</dl>
+	</div>
+</div>
+<!-- rawgit.com 与 github pages 的方案太慢了 -->
+<script type="text/javascript" src="../scripts/highlight.pack.js"></script>
+<script type="text/javascript">
+hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
