@@ -11,5 +11,5 @@
 	"handlebars": "~2.0.0"
   },
   "main":  "./lib/mock.js",
-  "bin": { "NMock": "bin/mock" }
+  "bin": { "NMock": "bin/nmock" }
 }
